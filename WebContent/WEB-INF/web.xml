@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--============================================================ Deployment 
+	Descriptor: web.xml ============================================================= -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<display-name>SummaryTask4</display-name>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<!--============================================================ Controller 
+		============================================================= -->
+	<servlet>
+		<servlet-name>MainController</servlet-name>
+		<servlet-class>ua.nure.nastenko.SummaryTask4.web.MainController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MainController</servlet-name>
+		<url-pattern>/mainController</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!--============================================================ Encoding 
+		support filter ============================================================= -->
+
+	<!--============================================================ Context 
+		listener ============================================================= -->
+	<listener>
+		<listener-class>ua.nure.nastenko.SummaryTask4.web.listener.ContextListener</listener-class>
+	</listener>
+
+	<!--============================================================ Error page 
+		============================================================= -->
+
+</web-app>

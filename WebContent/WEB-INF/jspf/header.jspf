@@ -1,0 +1,17 @@
+<%--=========================================================================== 
+Header (top area). 
+===========================================================================--%>
+
+<%@ include file="/WEB-INF/jspf/directive/page.jspf"%>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf"%>
+<tr>
+	<td id="header">
+		<div id="rightHeader">
+			<%--=========================================================================== 
+Type link to logout  
+===========================================================================--%>
+			<a href="mainController?command=logout"> Logout </a>
+
+		</div>
+	</td>
+</tr>
